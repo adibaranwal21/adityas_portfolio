@@ -1,30 +1,32 @@
 import './style.css'
 
 document.querySelector('#app').innerHTML = `
-<div class="page-shell">
+<div class="site">
   <header class="navbar">
-    <a class="brand-link" href="/">
+    <a class="brand-link" href="/" aria-current="page">
       <span class="name-primary">Aditya</span>
       <span class="name-secondary">Baranwal</span>
     </a>
     <nav class="nav-links" aria-label="Primary">
-      <a href="/" aria-current="page">Home</a>
-      <a href="https://www.tamu.edu/" target="_blank" rel="noreferrer">Texas A&M</a>
-      <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">Personal</a>
+      <a href="https://www.tamu.edu/" target="_blank" rel="noreferrer">About</a>
+      <a href="https://www.linkedin.com/in/aditya-baranwal-249b32389/" target="_blank" rel="noreferrer">Projects</a>
+      <a href="placeholder" target="_blank" rel="noreferrer">Contact</a>
     </nav>
   </header>
 
+  <div class="page-shell">
   <main class="hero-section" id="home">
-    <p class="intro">Hello, I am</p>
+    <p class="intro">Hello, I'm</p>
     <h1>
       <span class="name-primary">Aditya</span>
-      <span class="name-secondary">Baranwal</span>
+      <span class="name-secondary">Baranwal!</span>
     </h1>
-    <p class="tagline">Crafting modern web experiences with clean design and smooth interactions.</p>
+    <p class="tagline">I’m a freshman in general engineering at Texas A&M, and I know I’m gonna be a computer science major. This is just a website  where I’ll put up stuff about me and what I’m doing. Explore more to find out!</p>
     <div class="action-buttons">
       <a class="cta cta-solid" href="https://www.tamu.edu/" target="_blank" rel="noreferrer">Visit Texas A&M</a>
       <a class="cta cta-outline" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">Visit Personal Page</a>
     </div>
   </main>
+  </div>
 </div>
 `
