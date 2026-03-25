@@ -21,10 +21,13 @@ document.querySelector('#app').innerHTML = `
       <span class="name-primary">Aditya</span>
       <span class="name-secondary">Baranwal!</span>
     </h1>
-    <p class="tagline">I’m a freshman in general engineering at Texas A&M, and I know I’m gonna be a computer science major. This is just a website  where I’ll put up stuff about me and what I’m doing. Explore more to find out!</p>
+    <h2>
+      <span class="greeting-subtitle">Welcome!</span>
+    </h2>
+    <p class="tagline">I'm a freshman in general engineering at Texas A&M, and I know I’m gonna be a computer science major. This is just a website  where I’ll put up stuff about me and what I’m doing. Explore more to find out!</p>
     <div class="action-buttons">
-      <a class="cta cta-solid" href="https://www.tamu.edu/" target="_blank" rel="noreferrer">Visit Texas A&M</a>
-      <a class="cta cta-outline" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">Visit Personal Page</a>
+      <a class="cta cta-solid" href="https://www.tamu.edu/" target="_blank" rel="noreferrer"> Texas A&M</a>
+      <a class="cta cta-outline" href="https://www.linkedin.com/in/aditya-baranwal-249b32389/" target="_blank" rel="noreferrer">More</a>
     </div>
   </main>
   </div>
