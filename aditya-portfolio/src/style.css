@@ -5,7 +5,8 @@
   --text-main: #ffffff;
   --text-muted: #c2cee8;
   --name-accent: #8cb2ff;
-  --button-accent: #3c66ff;
+  --subtitle-accent: #78bcd9af;
+  --button-accent: #500000;
   --button-accent-hover: #2f56de;
   --button-outline: rgba(255, 255, 255, 0.18);
   --line-soft: rgba(255, 255, 255, 0.12);
@@ -93,6 +94,10 @@ body {
   color: var(--name-accent);
 }
 
+.greeting-subtitle {
+  color: var(--subtitle-accent);
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -151,9 +156,9 @@ h1 {
 }
 
 .action-buttons {
-  margin-top: 36px;
+  margin-top: 300px;
   display: flex;
-  gap: 12px;
+  gap: 1080px;
   flex-wrap: wrap;
 }
 
@@ -194,7 +199,7 @@ h1 {
 
 .cta-outline:hover {
   border-color: rgba(255, 255, 255, 0.36);
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 @media (max-width: 900px) {
