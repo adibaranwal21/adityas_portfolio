@@ -1,6 +1,6 @@
 :root {
-  --bg-main: #050b1d;
-  --bg-overlay: #0e1d3f;
+  --bg-main: #171d05;
+  --bg-overlay: #e6be2e;
   --bg-overlay-soft: rgba(22, 40, 84, 0.5);
   --text-main: #ffffff;
   --text-muted: #c2cee8;
@@ -32,23 +32,35 @@ body {
 
 #app {
   min-height: 100svh;
+  width: 100%;
+  padding: 0;
+}
+
+.site {
+  width: 100%;
+  min-height: 100svh;
   display: flex;
-  justify-content: center;
-  padding: 0 16px;
+  flex-direction: column;
 }
 
 .page-shell {
   width: 100%;
   max-width: 1440px;
+  margin-inline: auto;
+  padding: 0 16px;
   position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar {
   width: 100%;
-  height: 80px;
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 24px;
   padding: 0 48px;
   border-bottom: 1px solid var(--line-soft);
   background: linear-gradient(180deg, rgba(8, 18, 42, 0.78), rgba(8, 18, 42, 0.3));
@@ -58,11 +70,19 @@ body {
 .brand-link {
   text-decoration: none;
   color: var(--text-main);
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.1px;
   display: inline-flex;
+  align-items: center;
   gap: 8px;
+  flex-shrink: 0;
+}
+
+.brand-link:focus-visible {
+  outline: 2px solid var(--text-main);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 .name-primary {
@@ -77,11 +97,12 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
 }
 
 .nav-links a {
   color: var(--text-main);
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.2px;
   text-decoration: none;
@@ -89,11 +110,6 @@ body {
   border-radius: 10px;
   border: 1px solid transparent;
   transition: opacity 0.2s ease, background 0.2s ease, border-color 0.2s ease;
-}
-
-.nav-links a[aria-current='page'] {
-  background: var(--nav-active);
-  border-color: var(--line-soft);
 }
 
 .nav-links a:hover {
@@ -185,9 +201,14 @@ h1 {
   .navbar {
     height: auto;
     padding: 20px;
-    align-items: flex-start;
+    align-items: stretch;
     flex-direction: column;
     gap: 16px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .hero-section {
