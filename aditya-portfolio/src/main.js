@@ -8,7 +8,7 @@ document.querySelector('#app').innerHTML = `
       <span class="name-secondary">Baranwal</span>
     </a>
     <nav class="nav-links" aria-label="Primary">
-      <a href="https://www.tamu.edu/" target="_blank" rel="noreferrer">About</a>
+      <a href="/about.html">About</a>
       <a href="https://www.linkedin.com/in/aditya-baranwal-249b32389/" target="_blank" rel="noreferrer">Projects</a>
       <a href="placeholder" target="_blank" rel="noreferrer">Contact</a>
     </nav>
