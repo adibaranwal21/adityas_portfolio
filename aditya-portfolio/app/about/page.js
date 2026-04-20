@@ -10,8 +10,8 @@ document.querySelector('#app').innerHTML = `
     <nav class="nav-links" aria-label="Primary">
       <a href="/">Home</a>
       <a href="/about.html" aria-current="page">About</a>
-      <a href="https://www.linkedin.com/in/aditya-baranwal-249b32389/" target="_blank" rel="noreferrer">Projects</a>
-      <a href="#" rel="noreferrer">Contact</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/contact.html">Contact</a>
     </nav>
   </header>
 
